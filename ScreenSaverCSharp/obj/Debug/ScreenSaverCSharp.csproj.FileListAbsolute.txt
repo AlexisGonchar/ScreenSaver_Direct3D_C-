@@ -1,0 +1,9 @@
+c:\users\alexg\documents\visual studio 2013\Projects\ScreenSaverCSharp\ScreenSaverCSharp\bin\Debug\ScreenSaverCSharp.exe.config
+c:\users\alexg\documents\visual studio 2013\Projects\ScreenSaverCSharp\ScreenSaverCSharp\bin\Debug\ScreenSaverCSharp.exe
+c:\users\alexg\documents\visual studio 2013\Projects\ScreenSaverCSharp\ScreenSaverCSharp\bin\Debug\ScreenSaverCSharp.pdb
+c:\users\alexg\documents\visual studio 2013\Projects\ScreenSaverCSharp\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.csprojResolveAssemblyReference.cache
+c:\users\alexg\documents\visual studio 2013\Projects\ScreenSaverCSharp\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.ScreenSaverForm.resources
+c:\users\alexg\documents\visual studio 2013\Projects\ScreenSaverCSharp\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.Properties.Resources.resources
+c:\users\alexg\documents\visual studio 2013\Projects\ScreenSaverCSharp\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.csproj.GenerateResource.Cache
+c:\users\alexg\documents\visual studio 2013\Projects\ScreenSaverCSharp\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.exe
+c:\users\alexg\documents\visual studio 2013\Projects\ScreenSaverCSharp\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.pdb
