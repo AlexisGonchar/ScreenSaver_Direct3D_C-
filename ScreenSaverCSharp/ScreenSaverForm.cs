@@ -109,6 +109,21 @@ namespace ScreenSaverCSharp
                 {0.000000f, -7.500000f}
             };
 
+            for (int k = 0; k < 32; k++)
+            {
+                circle[k, 0] = circle[k, 0] * 0.5625f;
+            }
+
+            for (int k = 0; k < 8; k++)
+            {
+                plane[k, 0] = plane[k, 0] * 0.5625f;
+            }
+
+            for (int k = 0; k < 9; k++)
+            {
+                plane1[k, 0] = plane1[k, 0] * 0.5625f;
+            }
+
             float nol = 2.0f;
             int i = 0;
 
@@ -162,6 +177,134 @@ namespace ScreenSaverCSharp
             verts[i] = new CustomVertex.PositionColored(plane1[2, 0], -plane1[2, 1], -nol, Color.Blue.ToArgb()); i++;
             verts[i] = new CustomVertex.PositionColored(plane1[0, 0], -plane1[0, 1], -nol, Color.Blue.ToArgb()); i++;
             verts[i] = new CustomVertex.PositionColored(plane1[0, 0], -plane1[0, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[2, 0], plane1[2, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[3, 0], plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[3, 0], plane1[3, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[2, 0], plane1[2, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[2, 0], plane1[2, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[3, 0], plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[3, 0], plane1[3, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[3, 0], plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[2, 0], plane1[2, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[3, 0], plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[2, 0], plane1[2, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[2, 0], plane1[2, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[2, 0], -plane1[2, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[3, 0], -plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[3, 0], -plane1[3, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[2, 0], -plane1[2, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[2, 0], -plane1[2, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[3, 0], -plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[3, 0], -plane1[3, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[3, 0], -plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[2, 0], -plane1[2, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[3, 0], -plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[2, 0], -plane1[2, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[2, 0], -plane1[2, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[3, 0], plane1[3, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[3, 0], plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[5, 0], plane1[5, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[3, 0], plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[5, 0], plane1[5, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[5, 0], plane1[5, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[5, 0], plane1[5, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[3, 0], plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[3, 0], plane1[3, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[5, 0], plane1[5, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[5, 0], plane1[5, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[3, 0], plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[3, 0], -plane1[3, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[3, 0], -plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[5, 0], -plane1[5, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[3, 0], -plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[5, 0], -plane1[5, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[5, 0], -plane1[5, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[5, 0], -plane1[5, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[3, 0], -plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[3, 0], -plane1[3, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[5, 0], -plane1[5, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[5, 0], -plane1[5, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[3, 0], -plane1[3, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[5, 0], plane1[5, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[5, 0], plane1[5, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[6, 0], plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[5, 0], plane1[5, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[6, 0], plane1[6, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[6, 0], plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[6, 0], plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[5, 0], plane1[5, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[5, 0], plane1[5, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[6, 0], plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[6, 0], plane1[6, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[5, 0], plane1[5, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[5, 0], -plane1[5, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[5, 0], -plane1[5, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[6, 0], -plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[5, 0], -plane1[5, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[6, 0], -plane1[6, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[6, 0], -plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[6, 0], -plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[5, 0], -plane1[5, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[5, 0], -plane1[5, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[6, 0], -plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[6, 0], -plane1[6, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[5, 0], -plane1[5, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[6, 0], plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[8, 0], plane1[8, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[8, 0], plane1[8, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[6, 0], plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[6, 0], plane1[6, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[8, 0], plane1[8, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[8, 0], plane1[8, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[8, 0], plane1[8, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[6, 0], plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[8, 0], plane1[8, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[6, 0], plane1[6, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[6, 0], plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[6, 0], -plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[8, 0], -plane1[8, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[8, 0], -plane1[8, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane1[6, 0], -plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[6, 0], -plane1[6, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane1[8, 0], -plane1[8, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[8, 0], -plane1[8, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[8, 0], -plane1[8, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[6, 0], -plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane1[8, 0], -plane1[8, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[6, 0], -plane1[6, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane1[6, 0], -plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
 
             //circle
             verts[i] = new CustomVertex.PositionColored(circle[1, 0], circle[1, 1], nol, Color.Blue.ToArgb()); i++;
@@ -929,7 +1072,7 @@ namespace ScreenSaverCSharp
             device.Transform.View = Matrix.LookAtLH(new Vector3(0, 0, 50), new Vector3(), new Vector3(0, 1, 0));
 
             //device.Transform.World = Matrix.RotationX(angle) * Matrix.RotationY(angle * 2) * Matrix.RotationZ(angle * .7f);
-            device.Transform.World = Matrix.RotationX(angle);
+            device.Transform.World = Matrix.RotationY(angle);
             angle += 0.05f;
 
             device.RenderState.Lighting = false;
