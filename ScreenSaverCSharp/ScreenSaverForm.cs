@@ -129,7 +129,7 @@ namespace ScreenSaverCSharp
 
             verts = new CustomVertex.PositionColored[1128];
 
-            //plane1 connection
+            //plane1 connections
             verts[i] = new CustomVertex.PositionColored(plane1[0, 0], plane1[0, 1], nol, Color.Blue.ToArgb()); i++;
             verts[i] = new CustomVertex.PositionColored(-plane1[0, 0], plane1[0, 1], -nol, Color.Blue.ToArgb()); i++;
             verts[i] = new CustomVertex.PositionColored(plane1[0, 0], plane1[0, 1], -nol, Color.Blue.ToArgb()); i++;
@@ -305,6 +305,569 @@ namespace ScreenSaverCSharp
             verts[i] = new CustomVertex.PositionColored(plane1[8, 0], -plane1[8, 1], -nol, Color.Blue.ToArgb()); i++;
             verts[i] = new CustomVertex.PositionColored(plane1[6, 0], -plane1[6, 1], -nol, Color.Blue.ToArgb()); i++;
             verts[i] = new CustomVertex.PositionColored(plane1[6, 0], -plane1[6, 1], nol, Color.Blue.ToArgb()); i++;
+
+            //plane connections
+            verts[i] = new CustomVertex.PositionColored(plane[0, 0], plane[0, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane[0, 0], plane[0, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane[2, 0], plane[2, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane[0, 0], plane[0, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane[2, 0], plane[2, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane[2, 0], plane[2, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane[2, 0], plane[2, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane[0, 0], plane[0, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane[0, 0], plane[0, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane[2, 0], plane[2, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane[2, 0], plane[2, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane[0, 0], plane[0, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane[1, 0], plane[1, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane[0, 0], plane[0, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane[0, 0], plane[0, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane[1, 0], plane[1, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane[1, 0], plane[1, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane[0, 0], plane[0, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane[0, 0], -plane[0, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane[0, 0], -plane[0, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane[1, 0], -plane[1, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(plane[0, 0], -plane[0, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane[1, 0], -plane[1, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(plane[1, 0], -plane[1, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane[1, 0], -plane[1, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane[0, 0], -plane[0, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane[0, 0], -plane[0, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane[1, 0], -plane[1, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane[1, 0], -plane[1, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane[0, 0], -plane[0, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane[0, 0], plane[0, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane[0, 0], plane[0, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane[1, 0], plane[1, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-plane[0, 0], plane[0, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane[1, 0], plane[1, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-plane[1, 0], plane[1, 1], nol, Color.Blue.ToArgb()); i++;
+
+            //circle connections
+            verts[i] = new CustomVertex.PositionColored(circle[23, 0], circle[23, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[8, 0], circle[8, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[8, 0], circle[8, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[23, 0], circle[23, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[23, 0], circle[23, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[8, 0], circle[8, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[22, 0], circle[22, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[23, 0], circle[23, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[23, 0], circle[23, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[22, 0], circle[22, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[22, 0], circle[22, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[23, 0], circle[23, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[21, 0], circle[21, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[22, 0], circle[22, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[22, 0], circle[22, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[21, 0], circle[21, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[21, 0], circle[21, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[22, 0], circle[22, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[20, 0], circle[20, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[21, 0], circle[21, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[21, 0], circle[21, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[20, 0], circle[20, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[20, 0], circle[20, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[21, 0], circle[21, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[19, 0], circle[19, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[20, 0], circle[20, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[20, 0], circle[20, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[19, 0], circle[19, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[19, 0], circle[19, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[20, 0], circle[20, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[18, 0], circle[18, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[19, 0], circle[19, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[19, 0], circle[19, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[18, 0], circle[18, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[18, 0], circle[18, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[19, 0], circle[19, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[17, 0], circle[17, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[18, 0], circle[18, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[18, 0], circle[18, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[17, 0], circle[17, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[17, 0], circle[17, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[18, 0], circle[18, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[31, 0], circle[31, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[17, 0], circle[17, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[17, 0], circle[17, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[31, 0], circle[31, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[31, 0], circle[31, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[17, 0], circle[17, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[30, 0], circle[30, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[31, 0], circle[31, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[31, 0], circle[31, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[30, 0], circle[30, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[30, 0], circle[30, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[31, 0], circle[31, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[29, 0], circle[29, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[30, 0], circle[30, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[30, 0], circle[30, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[29, 0], circle[29, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[29, 0], circle[29, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[30, 0], circle[30, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[28, 0], circle[28, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[29, 0], circle[29, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[29, 0], circle[29, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[28, 0], circle[28, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[28, 0], circle[28, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[29, 0], circle[29, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[27, 0], circle[27, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[28, 0], circle[28, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[28, 0], circle[28, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[27, 0], circle[27, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[27, 0], circle[27, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[28, 0], circle[28, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[26, 0], circle[26, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[27, 0], circle[27, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[27, 0], circle[27, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[26, 0], circle[26, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[26, 0], circle[26, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[27, 0], circle[27, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[25, 0], circle[25, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[26, 0], circle[26, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[26, 0], circle[26, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[25, 0], circle[25, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[25, 0], circle[25, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[26, 0], circle[26, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[24, 0], circle[24, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[25, 0], circle[25, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[25, 0], circle[25, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[24, 0], circle[24, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[24, 0], circle[24, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[25, 0], circle[25, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[9, 0], circle[9, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[24, 0], circle[24, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[24, 0], circle[24, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[9, 0], circle[9, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[9, 0], circle[9, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[24, 0], circle[24, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[10, 0], circle[10, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[9, 0], circle[9, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[9, 0], circle[9, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[10, 0], circle[10, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[10, 0], circle[10, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[9, 0], circle[9, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[11, 0], circle[11, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[10, 0], circle[10, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[10, 0], circle[10, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[11, 0], circle[11, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[11, 0], circle[11, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[10, 0], circle[10, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[12, 0], circle[12, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[11, 0], circle[11, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[11, 0], circle[11, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[12, 0], circle[12, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[12, 0], circle[12, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[11, 0], circle[11, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[13, 0], circle[13, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[12, 0], circle[12, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[12, 0], circle[12, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[13, 0], circle[13, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[13, 0], circle[13, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[12, 0], circle[12, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[14, 0], circle[14, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[13, 0], circle[13, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[13, 0], circle[13, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[14, 0], circle[14, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[14, 0], circle[14, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[13, 0], circle[13, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[15, 0], circle[15, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[14, 0], circle[14, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[14, 0], circle[14, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[15, 0], circle[15, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[15, 0], circle[15, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[14, 0], circle[14, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[16, 0], circle[16, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[15, 0], circle[15, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[15, 0], circle[15, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[16, 0], circle[16, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[16, 0], circle[16, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[15, 0], circle[15, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[0, 0], circle[0, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[16, 0], circle[16, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[16, 0], circle[16, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[0, 0], circle[0, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[0, 0], circle[0, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[16, 0], circle[16, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[1, 0], circle[1, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[0, 0], circle[0, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[0, 0], circle[0, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[1, 0], circle[1, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[1, 0], circle[1, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[0, 0], circle[0, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[2, 0], circle[2, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[1, 0], circle[1, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[1, 0], circle[1, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[2, 0], circle[2, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[2, 0], circle[2, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[1, 0], circle[1, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[3, 0], circle[3, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[2, 0], circle[2, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[2, 0], circle[2, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[3, 0], circle[3, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[3, 0], circle[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[2, 0], circle[2, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[4, 0], circle[4, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[3, 0], circle[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[3, 0], circle[3, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[4, 0], circle[4, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[4, 0], circle[4, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[3, 0], circle[3, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[5, 0], circle[5, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[4, 0], circle[4, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[4, 0], circle[4, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[5, 0], circle[5, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[5, 0], circle[5, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[4, 0], circle[4, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[6, 0], circle[6, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[5, 0], circle[5, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[5, 0], circle[5, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[6, 0], circle[6, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[6, 0], circle[6, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[5, 0], circle[5, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[7, 0], circle[7, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[6, 0], circle[6, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[6, 0], circle[6, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[7, 0], circle[7, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[7, 0], circle[7, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[6, 0], circle[6, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[8, 0], circle[8, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[7, 0], circle[7, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[7, 0], circle[7, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(circle[8, 0], circle[8, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[8, 0], circle[8, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(circle[7, 0], circle[7, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            //circle2 connections
+            verts[i] = new CustomVertex.PositionColored(-circle[23, 0], -circle[23, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[8, 0], -circle[8, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[8, 0], -circle[8, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[23, 0], -circle[23, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[23, 0], -circle[23, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[8, 0], -circle[8, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[22, 0], -circle[22, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[23, 0], -circle[23, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[23, 0], -circle[23, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[22, 0], -circle[22, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[22, 0], -circle[22, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[23, 0], -circle[23, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[21, 0], -circle[21, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[22, 0], -circle[22, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[22, 0], -circle[22, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[21, 0], -circle[21, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[21, 0], -circle[21, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[22, 0], -circle[22, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[20, 0], -circle[20, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[21, 0], -circle[21, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[21, 0], -circle[21, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[20, 0], -circle[20, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[20, 0], -circle[20, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[21, 0], -circle[21, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[19, 0], -circle[19, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[20, 0], -circle[20, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[20, 0], -circle[20, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[19, 0], -circle[19, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[19, 0], -circle[19, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[20, 0], -circle[20, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[18, 0], -circle[18, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[19, 0], -circle[19, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[19, 0], -circle[19, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[18, 0], -circle[18, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[18, 0], -circle[18, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[19, 0], -circle[19, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[17, 0], -circle[17, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[18, 0], -circle[18, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[18, 0], -circle[18, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[17, 0], -circle[17, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[17, 0], -circle[17, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[18, 0], -circle[18, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[31, 0], -circle[31, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[17, 0], -circle[17, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[17, 0], -circle[17, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[31, 0], -circle[31, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[31, 0], -circle[31, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[17, 0], -circle[17, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[30, 0], -circle[30, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[31, 0], -circle[31, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[31, 0], -circle[31, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[30, 0], -circle[30, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[30, 0], -circle[30, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[31, 0], -circle[31, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[29, 0], -circle[29, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[30, 0], -circle[30, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[30, 0], -circle[30, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[29, 0], -circle[29, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[29, 0], -circle[29, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[30, 0], -circle[30, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[28, 0], -circle[28, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[29, 0], -circle[29, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[29, 0], -circle[29, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[28, 0], -circle[28, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[28, 0], -circle[28, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[29, 0], -circle[29, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[27, 0], -circle[27, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[28, 0], -circle[28, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[28, 0], -circle[28, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[27, 0], -circle[27, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[27, 0], -circle[27, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[28, 0], -circle[28, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[26, 0], -circle[26, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[27, 0], -circle[27, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[27, 0], -circle[27, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[26, 0], -circle[26, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[26, 0], -circle[26, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[27, 0], -circle[27, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[25, 0], -circle[25, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[26, 0], -circle[26, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[26, 0], -circle[26, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[25, 0], -circle[25, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[25, 0], -circle[25, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[26, 0], -circle[26, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[24, 0], -circle[24, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[25, 0], -circle[25, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[25, 0], -circle[25, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[24, 0], -circle[24, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[24, 0], -circle[24, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[25, 0], -circle[25, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[9, 0], -circle[9, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[24, 0], -circle[24, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[24, 0], -circle[24, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[9, 0], -circle[9, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[9, 0], -circle[9, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[24, 0], -circle[24, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[10, 0], -circle[10, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[9, 0], -circle[9, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[9, 0], -circle[9, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[10, 0], -circle[10, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[10, 0], -circle[10, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[9, 0], -circle[9, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[11, 0], -circle[11, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[10, 0], -circle[10, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[10, 0], -circle[10, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[11, 0], -circle[11, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[11, 0], -circle[11, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[10, 0], -circle[10, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[12, 0], -circle[12, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[11, 0], -circle[11, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[11, 0], -circle[11, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[12, 0], -circle[12, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[12, 0], -circle[12, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[11, 0], -circle[11, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[13, 0], -circle[13, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[12, 0], -circle[12, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[12, 0], -circle[12, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[13, 0], -circle[13, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[13, 0], -circle[13, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[12, 0], -circle[12, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[14, 0], -circle[14, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[13, 0], -circle[13, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[13, 0], -circle[13, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[14, 0], -circle[14, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[14, 0], -circle[14, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[13, 0], -circle[13, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[15, 0], -circle[15, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[14, 0], -circle[14, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[14, 0], -circle[14, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[15, 0], -circle[15, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[15, 0], -circle[15, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[14, 0], -circle[14, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[16, 0], -circle[16, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[15, 0], -circle[15, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[15, 0], -circle[15, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[16, 0], -circle[16, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[16, 0], -circle[16, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[15, 0], -circle[15, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[0, 0], -circle[0, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[16, 0], -circle[16, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[16, 0], -circle[16, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[0, 0], -circle[0, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[0, 0], -circle[0, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[16, 0], -circle[16, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[1, 0], -circle[1, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[0, 0], -circle[0, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[0, 0], -circle[0, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[1, 0], -circle[1, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[1, 0], -circle[1, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[0, 0], -circle[0, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[2, 0], -circle[2, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[1, 0], -circle[1, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[1, 0], -circle[1, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[2, 0], -circle[2, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[2, 0], -circle[2, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[1, 0], -circle[1, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[3, 0], -circle[3, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[2, 0], -circle[2, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[2, 0], -circle[2, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[3, 0], -circle[3, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[3, 0], -circle[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[2, 0], -circle[2, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[4, 0], -circle[4, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[3, 0], -circle[3, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[3, 0], -circle[3, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[4, 0], -circle[4, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[4, 0], -circle[4, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[3, 0], -circle[3, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[5, 0], -circle[5, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[4, 0], -circle[4, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[4, 0], -circle[4, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[5, 0], -circle[5, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[5, 0], -circle[5, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[4, 0], -circle[4, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[6, 0], -circle[6, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[5, 0], -circle[5, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[5, 0], -circle[5, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[6, 0], -circle[6, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[6, 0], -circle[6, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[5, 0], -circle[5, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[7, 0], -circle[7, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[6, 0], -circle[6, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[6, 0], -circle[6, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[7, 0], -circle[7, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[7, 0], -circle[7, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[6, 0], -circle[6, 1], -nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[8, 0], -circle[8, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[7, 0], -circle[7, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[7, 0], -circle[7, 1], nol, Color.Blue.ToArgb()); i++;
+
+            verts[i] = new CustomVertex.PositionColored(-circle[8, 0], -circle[8, 1], nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[8, 0], -circle[8, 1], -nol, Color.Blue.ToArgb()); i++;
+            verts[i] = new CustomVertex.PositionColored(-circle[7, 0], -circle[7, 1], -nol, Color.Blue.ToArgb()); i++;
 
             //circle
             verts[i] = new CustomVertex.PositionColored(circle[1, 0], circle[1, 1], nol, Color.Blue.ToArgb()); i++;
@@ -1073,7 +1636,7 @@ namespace ScreenSaverCSharp
 
             //device.Transform.World = Matrix.RotationX(angle) * Matrix.RotationY(angle * 2) * Matrix.RotationZ(angle * .7f);
             device.Transform.World = Matrix.RotationY(angle);
-            angle += 0.05f;
+            angle += 0.02f;
 
             device.RenderState.Lighting = false;
             device.RenderState.CullMode = Cull.CounterClockwise;
