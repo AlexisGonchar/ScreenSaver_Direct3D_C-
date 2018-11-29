@@ -7,3 +7,12 @@ c:\users\alexg\documents\visual studio 2013\Projects\ScreenSaverCSharp\ScreenSav
 c:\users\alexg\documents\visual studio 2013\Projects\ScreenSaverCSharp\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.csproj.GenerateResource.Cache
 c:\users\alexg\documents\visual studio 2013\Projects\ScreenSaverCSharp\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.exe
 c:\users\alexg\documents\visual studio 2013\Projects\ScreenSaverCSharp\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.pdb
+D:\Mega\Learning\С++\ScreenSaver_Direct3D_EP-master\ScreenSaver_Direct3D_EP-master\ScreenSaverCSharp\bin\Debug\ScreenSaverCSharp.exe.config
+D:\Mega\Learning\С++\ScreenSaver_Direct3D_EP-master\ScreenSaver_Direct3D_EP-master\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.exe
+D:\Mega\Learning\С++\ScreenSaver_Direct3D_EP-master\ScreenSaver_Direct3D_EP-master\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.pdb
+D:\Mega\Learning\С++\ScreenSaver_Direct3D_EP-master\ScreenSaver_Direct3D_EP-master\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.csprojResolveAssemblyReference.cache
+D:\Mega\Learning\С++\ScreenSaver_Direct3D_EP-master\ScreenSaver_Direct3D_EP-master\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.ScreenSaverForm.resources
+D:\Mega\Learning\С++\ScreenSaver_Direct3D_EP-master\ScreenSaver_Direct3D_EP-master\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.Properties.Resources.resources
+D:\Mega\Learning\С++\ScreenSaver_Direct3D_EP-master\ScreenSaver_Direct3D_EP-master\ScreenSaverCSharp\obj\Debug\ScreenSaverCSharp.csproj.GenerateResource.Cache
+D:\Mega\Learning\С++\ScreenSaver_Direct3D_EP-master\ScreenSaver_Direct3D_EP-master\ScreenSaverCSharp\bin\Debug\ScreenSaverCSharp.exe
+D:\Mega\Learning\С++\ScreenSaver_Direct3D_EP-master\ScreenSaver_Direct3D_EP-master\ScreenSaverCSharp\bin\Debug\ScreenSaverCSharp.pdb
